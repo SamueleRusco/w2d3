@@ -3,8 +3,8 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let n1 = 1;
-let n2 = 2;
+let n1 = 5;
+let n2 = 3;
 if (n1 > n2) {
   max = n1;
 } else {
@@ -88,30 +88,44 @@ if (totalShoppingCartBFapply > 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let numerieou = [145, 3, 89, 224, 0.0003, 25145];
+numerieou.sort(function (a, b) {
+  return a - b;
+});
+console.log(numerieou);
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let test = "3";
+if (typeof test == "number") {
+  console.log("è un numero");
+} else {
+  console.log("no numero");
+}
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-/* ESERCIZIO 10
-  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
-      console.log("Meno di 5");
-    } else {
-      console.log("Uguale a 10 o maggiore");
-    }
-*/
+let n8 = 6486884481;
+if (n8 % 2 == 0) {
+  console.log("numero pari");
+} else {
+  console.log("numero dispari");
+}
+/*ESERCIZIO 10 */
+/* Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza. */
+let val = 10;
+if (val < 5) {
+  console.log("Meno di 5");
+} else if (val < 10) {
+  console.log("Meno di 10");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -124,7 +138,8 @@ const me = {
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
 };
-
+me.city = "toronto";
+console.log(me);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 12
@@ -132,7 +147,8 @@ const me = {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+delete me.lastName;
+console.log(me);
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
@@ -144,9 +160,11 @@ const me = {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let arrayofnumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+arrayofnumbers[9] = 100;
+console.log(arrayofnumbers);
