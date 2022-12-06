@@ -1,12 +1,26 @@
-/* ESERCIZIO 1
+/*/* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let n1 = 1;
+let n2 = 2;
+if (n1 > n2) {
+  max = n1;
+} else {
+  max = n2;
+}
+console.log(max);
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
+let n3 = 4;
+if (n3 != 5) {
+  res = "not equal";
+} else {
+  res = "equal";
+}
+console.log(res);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -16,9 +30,26 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let n4 = 25;
+let res1 = n4 % 5;
+if (res1 == 0) {
+  res3 = "divisibile per cinque";
+} else {
+  res3 = "non divisibile per cinque";
+}
+console.log(res3);
+
 /* ESERCIZIO 4
-  Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
+  Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8.
+   oppure se la loro addizione/sottrazione sia uguale a 8.
 */
+let n5 = 12; //se n5 == 8 / oppure / n6 ==8 oppure se n5+n6 == 8 oppure n5-n6 == 8 oppure n6-n5 == 8
+let n6 = 40;
+if (n5 == 8 || n6 == 8 || n6 + n5 == 8 || n5 - n6 == 8 || n6 - n5 == 8) {
+  console.log("ok");
+} else {
+  console.log("no ok");
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -30,13 +61,26 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let totalShoppingCart = 1000;
+
+if (totalShoppingCart > 50) {
+  console.log("spedizione gratuita!");
+} else {
+  console.log("costo spedizione 10€");
+}
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let totalShoppingCartBF = 60;
+let totalShoppingCartBFapply = totalShoppingCartBF * 0.8;
+if (totalShoppingCartBFapply > 50) {
+  console.log("spedizione gratuita!");
+} else {
+  console.log("costo spedizione 10€");
+}
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
@@ -76,10 +120,10 @@
 */
 
 const me = {
-  name: 'John',
-  lastName: 'Doe',
-  skills: ['javascript', 'html', 'css'],
-}
+  name: "John",
+  lastName: "Doe",
+  skills: ["javascript", "html", "css"],
+};
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
